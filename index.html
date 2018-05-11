@@ -11,13 +11,21 @@
     <div class = "container">
       <button type="button" padding class="btn btn-large btn-block btn-primary" onclick="loadAlert()">It's dangerous to go alone!</button>
       <br>
+      <div class = "fullText">
+      <h1 id="uniName"></h1>
+      <h2 id="date"></h2>
     <p id="alert"></p>
-    <div>
+    <h2 id="Eric"></h2>
+  </div>
+</div>
   </body>
   <script src="function.js"></script>
   <script>
   function loadAlert() {
     document.getElementById("alert").innerHTML = getAlert();
+    document.getElementById("date").innerHTML = alertDateFormatted;
+    document.getElementById("uniName").innerHTML = "The University of Chicago";
+    document.getElementById("Eric").innerHTML = "Eric M. Heath <br> Associate Vice President for Safety & Security"
   }
   </script>
 </html>

@@ -1,4 +1,14 @@
-.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited{
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited, .btn-primary:focus{
   margin-top: 20px;
   background-color: #800000;
+  outline: none;
+  padding: 20px;
+}
+
+p {
+  margin: 30px;
+}
+
+div.fullText {
+  margin: 50px;
 }
