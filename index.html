@@ -22,8 +22,9 @@
   <script src="function.js"></script>
   <script>
   function loadAlert() {
-    document.getElementById("alert").innerHTML = getAlert();
-    document.getElementById("date").innerHTML = alertDateFormatted;
+    let alertObject = getAlert();
+    document.getElementById("alert").innerHTML = alertObject.alert;
+    document.getElementById("date").innerHTML = alertObject.date;
     document.getElementById("uniName").innerHTML = "The University of Chicago";
     document.getElementById("Eric").innerHTML = "Eric M. Heath <br> Associate Vice President for Safety & Security"
   }
