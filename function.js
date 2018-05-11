@@ -23,7 +23,7 @@ function getAlert() {
   months[alert_day.getMonth()] + " " + alert_day.getDate() + ", " + "2018" +
   ", a University student walking on the sidewalk off campus at " +
   randomHPAddress() + " " + street +
-  " was approached from behind by two " + theseSuspects + " one of whom was armed with a " + weapons.random() +
+  " was approached from behind by two " + theseSuspects + ", one of whom was armed with a " + weapons.random() +
   ". The " + theseSuspects + " demanded and took the victim's " + property.random() +
   " before fleeing to a waiting " + getawayVehicle.random() +
   " with a partial Illinois license plate REV6... that drove southbound on " +
