@@ -9,7 +9,7 @@ function randomDate(start, end) {
 
 
 function getAlert() {
-  let days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+  let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
   let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
   let alertDay = randomDate(new Date(2018, 4, 9), new Date());
   let alertDateFormatted = days[alertDay.getDay()] + ", " + months[alertDay.getMonth()] + " " + alertDay.getDate() + ", " + "2018"
@@ -21,6 +21,7 @@ function getAlert() {
   let suspects = ["Ayn Rand clones", "Economics undergraduates", "cishet demons", "zombie prospies"]
   let street = HPStreets.random();
   let theseSuspects = suspects.random();
+
   let apocalypsewow = "At approximately " +
   alertDay.toLocaleTimeString('en-us', {hour: '2-digit', minute:'2-digit'}) + " " +  alertDateFormatted +
   ", a University student walking on the sidewalk off campus at " +
@@ -30,7 +31,7 @@ function getAlert() {
   " before fleeing to a waiting " + getawayVehicle.random() +
   " with a partial Illinois license plate REV6... that drove southbound on " +
   street + ". " +
-  "The victim reported no physical injuries. The Four Horsemen of Chicago are investigating this crime.<br><br>" +
+  "The victim reported no physical injuries. The Chicago Human Volunteer Force are investigating this crime.<br><br>" +
   "Be alert and aware of your surroundings at all times. Don't resist an attack by "  + theseSuspects + " unless absolutely necessary. \
   Avoid using cell phones or other electronics while patrolling the streets. When patrolling, try to patrol in pairs or groups." ;
   return {alert: apocalypsewow, date: alertDateFormatted};
