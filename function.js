@@ -17,13 +17,14 @@ function getAlert() {
   let property = ["zombie survival kit"]
   let suspects = ["Ayn Rand clones", "Economics undergraduates", "cishet demons", "zombie prospies"]
   let street = HPStreets.random();
+  let theseSuspects = suspects.random();
   let apocalypsewow = "At approximately " +
   alert_day.toLocaleTimeString('en-us', {hour: '2-digit', minute:'2-digit'}) + " " + days[alert_day.getDay()] + ", " +
   months[alert_day.getMonth()] + " " + alert_day.getDate() + ", " + "2018" +
   ", a University student walking on the sidewalk off campus at " +
   randomHPAddress() + " " + street +
-  " was approached from behind by two " + suspects.random() + "one of whom was armed with a " + weapons.random() +
-  ". The suspects demanded and took the victim's " + property.random() +
+  " was approached from behind by two " + theseSuspects + " one of whom was armed with a " + weapons.random() +
+  ". The " + theseSuspects + " demanded and took the victim's " + property.random() +
   " before fleeing to a waiting " + getawayVehicle.random() +
   " with a partial Illinois license plate REV6... that drove southbound on " +
   street + ". " +
